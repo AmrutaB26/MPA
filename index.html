@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+</style>
+<script>
+  
+  function a2c() {
+    fbq('track', 'AddToCart', {"content_ids":["3sw1ptwksf"],"content_type":"product","content_name":"Cat picture1","content_category":"pictures","currency":"USD","value":"2","quntity":"1","brand":"shirley","contents":[{"id":"3sw1ptwksf","quantity":"1","price":"2.0"}]});
+  };
+  function purchase() {
+    fbq('track', 'Purchase', {"content_ids":["i7atsoiqze"],"content_type":"product","content_name":"Cat picture2","content_category":"pictures","currency":"USD","value":"2","quntity":"1","brand":"shirley","contents":[{"id":"i7atsoiqze","quantity":"1","price":"2.0"}]});
+  };
+  function vc() {
+    fbq('track', 'ViewContent', {"content_ids":["fqqto900s3"],"content_type":"product","content_name":"Cat picture3","content_category":"pictures","currency":"USD","value":"2","quntity":"1","brand":"shirley"});
+  };
+</script>
+  
+
+</head>
+<body>
+
+<h2 style="text-align:center">Cat-Log (Dummy Project)</h2>
+
+ <div>
+<div class="card">
+  <img src="https://scontent.xx.fbcdn.net/v/t45.5328-4/139900989_3644104018978486_851777908487489077_n.jpg?_nc_cat=111&_nc_map=test-rt&ccb=1-3&_nc_sid=c48759&_nc_ohc=CnDSaLs3ViQAX_BbePQ&_nc_ht=scontent.xx&_nc_rmd=260&oh=a4ac3390f969716c46184f98ee9a5502&oe=60C2A24F" alt="cat1"  style="width: 50%; height: 50%">
+  <h1>Cat 1</h1>
+  <p class="price">$2.0</p>
+  <p>contect ID : i7atsoiqze</p>
+  <p>Brand: shirley</p>
+  <p><button onclick="a2c()">AddToCart</button></p>
+</div>
+   <div class="card">
+  <img src="https://scontent.xx.fbcdn.net/v/t45.5328-4/140980695_4210837782279447_1160929568342272036_n.jpg?_nc_cat=110&_nc_map=test-rt&ccb=1-3&_nc_sid=c48759&_nc_ohc=ZyL1Ms4vuWwAX8d6fbO&_nc_ht=scontent.xx&_nc_rmd=260&oh=21c45dd27f72981adec888e1914bc168&oe=60C38BE5" alt="cat2"  style="width: 50%; height: 50%">
+  <h1>Cat 2</h1>
+  <p class="price">$2.0</p>
+  <p>contect ID : uxsr57wh0t</p>
+  <p>Brand: shirley</p>
+  <p><button onclick="purchase()">Purchase</button></p>
+</div>
+</div>
+   <div class="card">
+  <img src="https://scontent.xx.fbcdn.net/v/t45.5328-4/141792062_4025739807460602_2225309937212510458_n.jpg?_nc_cat=101&_nc_map=test-rt&ccb=1-3&_nc_sid=c48759&_nc_ohc=VM_pMmtbCDQAX8jd0i-&_nc_ht=scontent.xx&_nc_rmd=260&oh=a447da661e83c309b77016642d549a6e&oe=60C32601" alt="cat3"  style="width: 50%; height: 50%">
+  <h1>Cat 3</h1>
+  <p class="price">$2.0</p>
+  <p>contect ID : fqqto900s3</p>
+  <p>Brand: shirley</p>
+  <p><button onclick="vc();">View Content</button></p>
+</div>
+</div>
+ <div> 
+</body>
+</html>
